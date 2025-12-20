@@ -132,7 +132,7 @@
     evolution
     kdePackages.kdenlive
     transmission_4-gtk
-
+    gnome-boxes
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

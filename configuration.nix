@@ -14,6 +14,16 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.kernelModules = [ "kvm_intel" ];
+
+  virtualisation = {
+	libvirtd = {
+		enable = true;
+		#qemuSupport = true;
+		#tcpListen = false;
+	};
+  };
+
   networking.hostName = "ashPC"; 
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant
 
@@ -96,7 +106,7 @@
   users.users.ash = {
     isNormalUser = true;
     description = "Arnav Hiwarkar";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirt" "kvm" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -133,6 +143,8 @@
     kdePackages.kdenlive
     transmission_4-gtk
     gnome-boxes
+    virt-manager
+    qemu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

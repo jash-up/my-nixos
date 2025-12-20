@@ -105,6 +105,8 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -116,6 +118,21 @@
     syncthing
     obsidian
     git
+    gnome-boxes
+    cmatrix
+    tmux
+    bat
+    htop
+    kitty
+    alacritty
+    libreoffice-still
+    vlc
+    calibre
+    discord
+    evolution
+    kdePackages.kdenlive
+    transmission_4-gtk
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

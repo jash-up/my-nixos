@@ -145,6 +145,9 @@
     gnome-boxes
     virt-manager
     qemu
+    gnomeExtensions.caffeine
+    steam
+    gnome-extension-manager
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -37,6 +37,9 @@
   networking.networkmanager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+	"gradle-7.6.6"
+  ];
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -148,6 +151,7 @@
     gnomeExtensions.caffeine
     steam
     gnome-extension-manager
+    maptool
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

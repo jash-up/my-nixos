@@ -152,6 +152,7 @@
     steam
     gnome-extension-manager
     maptool
+    gnome-tweaks
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

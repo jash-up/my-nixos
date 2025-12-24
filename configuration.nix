@@ -153,6 +153,8 @@
     gnome-extension-manager
     maptool
     gnome-tweaks
+    chromium
+    protonvpn-gui
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

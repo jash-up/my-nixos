@@ -67,6 +67,20 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  #Setting up plex
+  services.plex = {
+	enable = false;
+	openFirewall = true;
+
+  };
+
+  hardware.opengl.enable = true;
+  services.xserver.videoDrivers = [ "intel" ];
+
+  #users.users.plex.extraGroups = [
+  #	"video"
+  #];
+
   #Enabling ssh-agent. --Keep it disabled on gnome cuz of gnome ssh agent lol
   #programs.ssh.startAgent = true;
 

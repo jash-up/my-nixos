@@ -7,7 +7,8 @@
 
   outputs = { self, nixpkgs }: {
   	nixosConfigurations.ashPC = nixpkgs.lib.nixosSystem {
-		modules = [ ./configuration.nix];
+		system = "x86_64-linux";
+		modules = [ ./configuration.nix ];
 	};
   };
 }

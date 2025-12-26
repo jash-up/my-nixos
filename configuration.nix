@@ -155,6 +155,27 @@
     gnome-tweaks
     chromium
     protonvpn-gui
+    nemo
+    ranger
+    qutebrowser
+    telegram-desktop
+    fzf
+    eza
+    gimp2-with-plugins
+    handbrake
+    tor
+    freecad
+    kstars
+    wireshark
+    nmap
+    aircrack-ng
+    metasploit
+    burpsuite
+    hashcat
+    john
+    ffmpeg_7-full
+    peaclock
+    inetutils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

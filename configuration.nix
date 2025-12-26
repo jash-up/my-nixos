@@ -74,8 +74,10 @@
 
   };
 
-  hardware.opengl.enable = true;
-  services.xserver.videoDrivers = [ "intel" ];
+  #systemd.services.plexmediaserver.wantedBy = [ ];
+
+  #hardware.opengl.enable = true;
+  #services.xserver.videoDrivers = [ "intel" ];
 
   #users.users.plex.extraGroups = [
   #	"video"
@@ -195,6 +197,7 @@
     ffmpeg_7-full
     peaclock
     inetutils
+    plex
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

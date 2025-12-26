@@ -14,6 +14,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  nix.nixPath = [
+	"nixos-config=/etc/nixos/configuration.nix"
+  	"nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos"
+  ];
+
   boot.kernelModules = [ "kvm_intel" ];
 
   virtualisation = {
